@@ -13,13 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 Using devices such as Jawbone Up, Nike FuelBand, and Fitbit it is now possible to collect a large amount of data about personal activity relatively inexpensively. These type of devices are part of the quantified self movement - a group of enthusiasts who take measurements about themselves regularly to improve their health, to find patterns in their behavior, or because they are tech geeks. One thing that people regularly do is quantify how much of a particular activity they do, but they rarely quantify how well they do it. In this project, your goal will be to use data from accelerometers on the belt, forearm, arm, and dumbell of 6 participants. They were asked to perform barbell lifts correctly and incorrectly in 5 different ways. More information is available from the website [here]: (http://web.archive.org/web/20161224072740/http:/groupware.les.inf.puc-rio.br/har).
 
 
-## Synopsis
-
 A Random Forest Model accurately predicted the 20 quiz test cases with 100% out of sample accuracy.  The model was 99.89% accurate for the validation data set. The author would like to recognize the team of Ugulino, W.; Cardador, D.; Vega, K.; Velloso, E.; Milidiu, R.; Fuks, H.  for their article and data set:  Wearable Computing: Accelerometers' Data Classification of Body Postures and Movements
 
 [Read more:] (http://groupware.les.inf.puc-rio.br/har#ixzz4sNxpe8oI)
-
-## Details of Analysis
 
 Data was extracted consisted of 19622 observations and 160 columns in the training data set. The test data set included 20 observations representing the 20 cases to be predicted in the final quiz.  The data was cleaned to remove columns that consisted of greater than half N/A or missing data as well as the first column which was the observation number. After cleaning, 59 columns remained in the training data set. The test data set was then coerced to have the same data types as the corresponding columns in training data se to prevent errors when trying to prediict classe with the final selected model. 
 
